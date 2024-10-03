@@ -66,6 +66,10 @@ This page demonstrates a variety of Bootstrap components and features:
 - **Carousel**: A slideshow component for cycling through images.
 - **Modal**: A pop-up modal example.
 - **Tooltips**: Hover-triggered tooltip example.
+- **Popover**: Hover-triggered popover example.
+- **Toast**: Toast example button.
+- **Scrollspy**: Scrollspy example.
+- **Offcanvas**: offcanvas example.
 
 ---
 
