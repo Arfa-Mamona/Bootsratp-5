@@ -347,6 +347,96 @@
   
     </div>
 
+       <!-- Popover -->
+       <section id="popover">
+        <h2>Popover</h2>
+        <p>The Popover component is similar to tooltips but the difference is that it can contain much more content than tooltip.</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Popover heading" data-bs-content="It is a pop-up box that appears when the user clicks on an element.">
+            Popver button
+        </button>
+       </section>
+
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+            })
+            </script>
+
+                  <!-- Toast -->
+    <section id="Toast" class="my-5">
+        <h2>Toast Example</h2>
+        <p>The toast component is like an alert box that only shows for some seconds when the user clicks on the button.</p>
+        <button type="button" class="btn btn-success" id="showToast">Show Toast</button>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div class="toast" id="myToast">
+                <div class="toast-header">
+                    <strong class="me-auto">Notification</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body">
+                   "Hey!! Did you just click??"
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- show toast on click -->
+    <script>
+        const toastTrigger = document.getElementById('showToast');
+        const toastLiveExample = document.getElementById('myToast');
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', () => {
+                const toast = new bootstrap.Toast(toastLiveExample);
+                toast.show();
+            });
+        }
+    </script>
+
+    <!-- Scrollspy -->
+    <h2>Scrollspy</h2>
+    <p>Scrollspy used to update links automatically in a navigation list based on their scroll position.</p>
+    <div data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <nav id="navbar" class="navbar navbar-light bg-light px-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#Firstsection">Section 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Secondsection2">Section 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Thirdsection3">Section 3</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+        <h4 id="section1">Section 1</h4>
+        <p>Content for section 1 goes here.</p>
+        <h4 id="section2">Section 2</h4>
+        <p>Content for section 2 goes here.</p>
+        <h4 id="section3">Section 3</h4>
+        <p>Content for section 3 goes here.</p>
+    </div>
+
+     <!-- Offcanvas -->
+     <h2>Offcanvas Example</h2>
+     <p>Offcanvas is similar to modals but except that is often used as a sidebar navigation menu.</p>
+     <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+         Open Offcanvas
+     </button>
+     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+         <div class="offcanvas-header">
+             <h5 id="offcanvasExampleLabel">Offcanvas</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+         </div>
+         <div class="offcanvas-body">
+             <p>Here is content inside the offcanvas/sidebar.</p>
+         </div>
+     </div>
+
 </body>
 
 </html>
