@@ -70,6 +70,9 @@ This page demonstrates a variety of Bootstrap components and features:
 - **Toast**: Toast example button.
 - **Scrollspy**: Scrollspy example.
 - **Offcanvas**: offcanvas example.
+- **Utilites**: Utilites example.
+- **form**: form example.
+- **Flex**: Flex example.
 
 ---
 
