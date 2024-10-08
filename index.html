@@ -574,8 +574,8 @@
     </form>
     </div>
 
-     <!-- Select Menu -->
-     <div class="mb-3">
+    <!-- Select Menu -->
+    <div class="mb-3">
         <label for="exampleSelect" class="form-label">Select</label>
         <select class="form-select" id="exampleSelect" required>
             <option value="">Click to choose...</option>
@@ -640,33 +640,100 @@
 
     <!-- Submit Button -->
     <button class="btn btn-primary" type="submit">Submit</button>
-</form>
-</div>
+    </form>
+    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-// Form validation
-(function () {
-    'use strict'
-    const forms = document.querySelectorAll('form')
-    Array.from(forms).forEach(form => {
-        form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-            }
-            form.classList.add('was-validated')
-        }, false)
-    })
-})()
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form validation
+        (function () {
+            'use strict'
+            const forms = document.querySelectorAll('form')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
 
-// Update range value
-const rangeInput = document.getElementById('customRange');
-const rangeValue = document.getElementById('rangeValue');
-rangeInput.addEventListener('input', () => {
-    rangeValue.textContent = rangeInput.value;
-});
-</script>
+        // Update range value
+        const rangeInput = document.getElementById('customRange');
+        const rangeValue = document.getElementById('rangeValue');
+        rangeInput.addEventListener('input', () => {
+            rangeValue.textContent = rangeInput.value;
+        });
+    </script>
+
+    <div class="container"></div>
+    <!-- Basic Grid -->
+    <h2>Grid System</h2>
+    <div class="row">
+        <div class="col"><strong>Bootstrap 3</strong></div>
+        <div class="col"><strong>Bootstrap 4</strong></div>
+        <div class="col"><strong>Bootstrap 5</strong></div>
+    </div>
+
+    <!-- Stacked/Horizontal Layouts -->
+    <h2>Stacked Layouts</h2>
+    <div class="row">
+        <div class="col-12 col-md-4">Bootstrap 3 supported Internet Explorer 8 and 9.</div>
+        <div class="col-12 col-md-4">Bootstrap 4 dropped support for IE 8 and 9.</div>
+        <div class="col-12 col-md-4">Bootstrap 5 no longer supports Internet Explorer at all.</div>
+    </div>
+
+    <!-- XSmall Grid (xs) -->
+    <h2>XSmall (xs)</h2>
+    <div class="row">
+        <div class="col-6"> Bootstrap 3 primarily used px​(Zluck Solutions).</div>
+        <div class="col-6">Both Bootstrap 4 and 5 use rem units for better scalability</div>
+    </div>
+
+    <!-- Small Grid (sm) -->
+    <h2>Small (sm)</h2>
+    <div class="row">
+        <div class="col-sm-4">Bootstrap 3 had a 4-tier grid system</div>
+        <div class="col-sm-4">Bootstrap 4 introduced a 5-tier system</div>
+        <div class="col-sm-4">Bootstrap 5 expanded this to a 6-tier grid system</div>
+    </div>
+
+    <!-- Medium Grid (md) -->
+    <h2>Medium (md)</h2>
+    <div class="row">
+        <div class="col-md-6">Bootstrap 3 and 4 relied on jQuery for JavaScript functionalities.</div>
+        <div class="col-md-6">Bootstrap 5 eliminated jQuery, replacing it with JS.</div>
+    </div>
+
+    <!-- Large Grid (lg) -->
+    <h2>Large (lg)</h2>
+    <div class="row">
+        <div class="col-lg-3">25% Width</div>
+        <div class="col-lg-3">25% Width</div>
+        <div class="col-lg-3">25% Width</div>
+        <div class="col-lg-3">25% Width</div>
+    </div>
+
+    <!-- Extra Large Grid (xl) -->
+    <h2>Extra Large (xl)</h2>
+    <div class="row">
+        <div class="col-xl-8">66.67% Width</div>
+        <div class="col-xl-4">33.33% Width</div>
+    </div>
+
+    <!-- XXL Grid (xxl) -->
+    <h2>Grid XXL</h2>
+    <div class="row">
+        <div class="col-xxl-9">75% on XXL</div>
+        <div class="col-xxl-3">25% on XXL</div>
+    </div>
+
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
