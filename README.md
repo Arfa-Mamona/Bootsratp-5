@@ -73,6 +73,8 @@ This page demonstrates a variety of Bootstrap components and features:
 - **Utilites**: Utilites example.
 - **form**: form example.
 - **Flex**: Flex example.
+- **Form**: BS5 Form example.
+- **Grid**: BS5 Grid example.
 
 ---
 
